@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_dark"
+    tools:context=".Fragment1Demo">
+ <LinearLayout
+     android:orientation="vertical"
+     android:layout_width="match_parent"
+     android:gravity="center"
+     android:layout_height="match_parent">
+
+     <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:hint="UserName"
+        android:id="@+id/et_fragment1_title"
+          />
+    <Button
+        android:id="@+id/btn_sendData_to_activity"
+        android:text="Send Data"
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+ </LinearLayout>
+</FrameLayout>
