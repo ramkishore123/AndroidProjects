@@ -21,32 +21,21 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         data=findViewById(R.id.btn_sendDataToFragment);
     }
 
     public void addFragment1(View view) {
-
         FragmentManager fragmentManager= getSupportFragmentManager();
-
         FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
-
         BlankFragment1 blankFragment1= new BlankFragment1();
-
         fragmentTransaction.add(R.id.contaier, blankFragment1);
-
-
         fragmentTransaction.commit();
     }
 
     public void sendDataToFragment(View view) {
-
         SimpleDateFormat simpleDateFormat= new SimpleDateFormat("HH:mm:ss", Locale.getDefault());
-
         Date date= new Date();
-
         String Ctime=simpleDateFormat.format(date);
-
         blankFragment1.showData(Ctime);
     }
 
